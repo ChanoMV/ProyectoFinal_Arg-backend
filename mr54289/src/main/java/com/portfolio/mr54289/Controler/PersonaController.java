@@ -49,20 +49,20 @@ public class PersonaController {
     }
     
     @PutMapping("/update/{id}")
-    public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody DtoPersona dtoexp){
+    public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody DtoPersona dtopers){
         if(!personaService.existsById(id))
             return new ResponseEntity(new Mensaje("El id no existe"), HttpStatus.BAD_REQUEST);
         
-        if(personaService.existsByNombre(dtoexp.getNombre()) && personaService
-                .getByNombre(dtoexp.getNombre()).get().getId()!=id)
+        if(personaService.existsByNombre(dtopers.getNombre()) && personaService
+                .getByNombre(dtopers.getNombre()).get().getId()!=id)
             return new ResponseEntity(new Mensaje("Esa persona ya existe"), HttpStatus.BAD_REQUEST);
         
-        if(StringUtils.isBlank(dtoexp.getNombre()))
+        if(StringUtils.isBlank(dtopers.getNombre()))
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
         
         Persona persona = personaService.getOne(id).get();
-        persona.setNombre(dtoexp.getNombre());
-        persona.setDescripcion(dtoexp.getDescripcion());
+        persona.setNombre(dtopers.getNombre());
+        persona.setDescripcion(dtopers.getDescripcion());
         
         personaService.save(persona);
         return new ResponseEntity(new Mensaje("Persona actualizada"), HttpStatus.OK);
