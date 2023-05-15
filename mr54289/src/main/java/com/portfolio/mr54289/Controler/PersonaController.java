@@ -41,11 +41,11 @@ public class PersonaController {
         return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
     
     if(personaService.existsByNombre(dtopers.getNombre()))
-        return new ResponseEntity(new Mensaje("Esa experiencia existe"), HttpStatus.BAD_REQUEST);
+        return new ResponseEntity(new Mensaje("Esa persona existe"), HttpStatus.BAD_REQUEST);
     
     Persona persona = new Persona(dtopers.getNombre(), dtopers.getDescripcion(), dtopers.getApellido(), dtopers.getImg());
     personaService.save(persona);
-    return new ResponseEntity(new Mensaje("Experiencia agregada"),HttpStatus.OK);
+    return new ResponseEntity(new Mensaje("Persona agregada"),HttpStatus.OK);
     }
     
     @PutMapping("/update/{id}")
@@ -55,7 +55,7 @@ public class PersonaController {
         
         if(personaService.existsByNombre(dtoexp.getNombre()) && personaService
                 .getByNombre(dtoexp.getNombre()).get().getId()!=id)
-            return new ResponseEntity(new Mensaje("Esa experiencia ya existe"), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity(new Mensaje("Esa persona ya existe"), HttpStatus.BAD_REQUEST);
         
         if(StringUtils.isBlank(dtoexp.getNombre()))
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
@@ -65,7 +65,7 @@ public class PersonaController {
         persona.setDescripcion(dtoexp.getDescripcion());
         
         personaService.save(persona);
-        return new ResponseEntity(new Mensaje("Experiencia actualizada"), HttpStatus.OK);
+        return new ResponseEntity(new Mensaje("Persona actualizada"), HttpStatus.OK);
     }
     
     @DeleteMapping("/delete/{id}")
@@ -74,7 +74,7 @@ public class PersonaController {
       if(!personaService.existsById(id))
             return new ResponseEntity(new Mensaje("El id no existe"), HttpStatus.BAD_REQUEST);
         personaService.delete(id);  
-               return new ResponseEntity(new Mensaje("Experiencia eliminada"), HttpStatus.OK);
+               return new ResponseEntity(new Mensaje("Persona eliminada"), HttpStatus.OK);
     }
     
     @GetMapping("/detail/{id}")
