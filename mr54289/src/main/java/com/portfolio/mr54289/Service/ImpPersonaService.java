@@ -4,12 +4,17 @@ package com.portfolio.mr54289.Service;
 import com.portfolio.mr54289.Entity.Persona;
 import com.portfolio.mr54289.Repository.IPersonaRepository;;
 
-import javax.transaction.Transactional;
+
 
 import java.util.List;
 import java.util.Optional;
+import javax.transaction.Transactional;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import java.util.List;
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,8 +35,8 @@ public class ImpPersonaService {
         return ipersonaRepository.findById(id);
     }
     
-    public Optional<Persona> getByNombre(String nombre){
-        return ipersonaRepository.findByNombre(nombre);
+    public Optional<Persona> getByNombreAC(String nombreAC){
+        return ipersonaRepository.findByNombreAC(nombreAC);
     }
     
     public void save(Persona persona){
@@ -46,8 +51,8 @@ public class ImpPersonaService {
         return ipersonaRepository.existsById(id);
     }
     
-    public boolean existsByNombre( String nombre){
-        return ipersonaRepository.existsByNombre(nombre);
+    public boolean existsByNombreAC( String nombreAC){
+        return ipersonaRepository.existsByNombreAC(nombreAC);
     }
 }
 

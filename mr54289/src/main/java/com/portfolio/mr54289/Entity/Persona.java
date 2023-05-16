@@ -21,14 +21,14 @@ public class Persona {
     
     @NotNull
     @Size( min= 1, max= 50, message= "No cumple con la longitud")
-    private String nombre;
+    private String nombreAC;
     
     @NotNull
     @Size( min= 1, max= 50, message= "No cumple con la longitud")
-    private String apellido;
+    private String apellidoAC;
     
     @NotNull
-    private String descripcion;
+    private String descripcionAC;
     
    
     private String img;   
@@ -36,19 +36,19 @@ public class Persona {
     public Persona() {
     }
 
-    public Persona(String nombre, String apellido, String descripcion, String img) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.descripcion = descripcion;
+    public Persona(String nombreAC, String apellidoAC, String descripcionAC, String img) {
+        this.nombreAC = nombreAC;
+        this.apellidoAC = apellidoAC;
+        this.descripcionAC = descripcionAC;
         this.img = img;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public String getDescripcionAC() {
+        return descripcionAC;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setDescripcionAC(String descripcionAC) {
+        this.descripcionAC = descripcionAC;
     }
     
     
@@ -63,20 +63,20 @@ public class Persona {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreAC() {
+        return nombreAC;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreAC(String nombreAC) {
+        this.nombreAC = nombreAC;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getApellidoAC() {
+        return apellidoAC;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setApellidoAC(String apellidoAC) {
+        this.apellidoAC = apellidoAC;
     }
 
     public String getImg() {

@@ -37,13 +37,13 @@ public class PersonaController {
     
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody DtoPersona dtopers){
-    if(StringUtils.isBlank(dtopers.getNombre()))
+    if(StringUtils.isBlank(dtopers.getNombreAC()))
         return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
     
-    if(personaService.existsByNombre(dtopers.getNombre()))
+    if(personaService.existsByNombreAC(dtopers.getNombreAC()))
         return new ResponseEntity(new Mensaje("Esa persona existe"), HttpStatus.BAD_REQUEST);
     
-    Persona persona = new Persona(dtopers.getNombre(), dtopers.getDescripcion(), dtopers.getApellido(), dtopers.getImg());
+    Persona persona = new Persona(dtopers.getNombreAC(), dtopers.getDescripcionAC(), dtopers.getApellidoAC(), dtopers.getImg());
     personaService.save(persona);
     return new ResponseEntity(new Mensaje("Persona agregada"),HttpStatus.OK);
     }
@@ -53,16 +53,16 @@ public class PersonaController {
         if(!personaService.existsById(id))
             return new ResponseEntity(new Mensaje("El id no existe"), HttpStatus.BAD_REQUEST);
         
-        if(personaService.existsByNombre(dtopers.getNombre()) && personaService
-                .getByNombre(dtopers.getNombre()).get().getId()!=id)
+        if(personaService.existsByNombreAC(dtopers.getNombreAC()) && personaService
+                .getByNombreAC(dtopers.getNombreAC()).get().getId()!=id)
             return new ResponseEntity(new Mensaje("Esa persona ya existe"), HttpStatus.BAD_REQUEST);
         
-        if(StringUtils.isBlank(dtopers.getNombre()))
+        if(StringUtils.isBlank(dtopers.getNombreAC()))
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
         
         Persona persona = personaService.getOne(id).get();
-        persona.setNombre(dtopers.getNombre());
-        persona.setDescripcion(dtopers.getDescripcion());
+        persona.setNombreAC(dtopers.getNombreAC());
+        persona.setDescripcionAC(dtopers.getDescripcionAC());
         
         personaService.save(persona);
         return new ResponseEntity(new Mensaje("Persona actualizada"), HttpStatus.OK);

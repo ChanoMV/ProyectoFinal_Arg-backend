@@ -5,58 +5,54 @@
 package com.portfolio.mr54289.Dto;
 
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+
 
 
 public class DtoPersona {
   
     
      @NotBlank
-    private String nombre;
+    private String nombreAC;
       @NotBlank
-    private String apellido;
+    private String apellidoAC;
        @NotBlank
-    private String descripcion;
+    private String descripcionAC;
         @NotBlank
     private String img; 
 
     public DtoPersona() {
     }
 
-    public DtoPersona(String nombre, String apellido, String descripcion, String img) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.descripcion = descripcion;
+    public DtoPersona(String nombreAC, String apellidoAC, String descripcionAC, String img) {
+        this.nombreAC = nombreAC;
+        this.apellidoAC = apellidoAC;
+        this.descripcionAC = descripcionAC;
         this.img = img;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombreAC() {
+        return nombreAC;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreAC(String nombre) {
+        this.nombreAC = nombre;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getApellidoAC() {
+        return apellidoAC;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setApellidoAC(String apellido) {
+        this.apellidoAC = apellido;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public String getDescripcionAC() {
+        return descripcionAC;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setDescripcionAC(String descripcion) {
+        this.descripcionAC = descripcion;
     }
 
     public String getImg() {
