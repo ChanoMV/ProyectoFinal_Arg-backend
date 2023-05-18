@@ -37,11 +37,11 @@ public class Skill implements Serializable {
         this.id = id;
     }
 
-    public String getNombre() {
+    public String getNombreSK() {
         return nombreSK;
     }
 
-    public void setNombre(String nombreSK) {
+    public void setNombreSK(String nombreSK) {
         this.nombreSK = nombreSK;
     }
 
