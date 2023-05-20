@@ -45,7 +45,7 @@ public class PersonaController {
     if(personaService.existsByNombreAC(dtopers.getNombreAC()))
         return new ResponseEntity(new Mensaje("Esa persona existe"), HttpStatus.BAD_REQUEST);
     
-    Persona persona = new Persona(dtopers.getNombreAC(), dtopers.getDescripcionAC(), dtopers.getApellidoAC(), dtopers.getImg());
+    Persona persona = new Persona(dtopers.getNombreAC(), dtopers.getApellidoAC(), dtopers.getDescripcionAC(), dtopers.getImg());
     personaService.save(persona);
     return new ResponseEntity(new Mensaje("Persona agregada"),HttpStatus.OK);
     }
