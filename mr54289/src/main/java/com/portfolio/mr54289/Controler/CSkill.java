@@ -71,7 +71,7 @@ public class CSkill {
         
 
         Skill skill = sskill.getOne(id).get();
-        skill.setNombre(dtoskill.getNombreSK());
+        skill.setNombreSK(dtoskill.getNombreSK());
         skill.setPorcentaje(dtoskill.getPorcentaje());
 
         sskill.save(skill);

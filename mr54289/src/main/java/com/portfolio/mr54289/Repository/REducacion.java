@@ -5,7 +5,6 @@
 package com.portfolio.mr54289.Repository;
 
 import com.portfolio.mr54289.Entity.Educacion;
-import com.portfolio.mr54289.Entity.Experiencia;
 import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

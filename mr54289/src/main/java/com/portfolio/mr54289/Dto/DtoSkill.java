@@ -26,8 +26,8 @@ public class DtoSkill {
         return nombreSK;
     }
 
-    public void setNombreSK(String nombre) {
-        this.nombreSK = nombre;
+    public void setNombreSK(String nombreSK) {
+        this.nombreSK = nombreSK;
     }
 
     public int getPorcentaje() {
