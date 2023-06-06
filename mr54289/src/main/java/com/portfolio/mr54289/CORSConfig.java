@@ -20,7 +20,7 @@ public class CORSConfig {
 
         @Override
         public void addCorsMappings(CorsRegistry registry) {
-            registry.addMapping("/**").allowedOrigins("**").allowedMethods("*").allowedHeaders("*");
+            registry.addMapping("/**").allowedOrigins("https://proyectoargprogr.web.app/","http://localhost:4200/").allowedMethods("*").allowedHeaders("*");
         }
     }
 }

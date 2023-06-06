@@ -66,7 +66,7 @@ public class CEducacion {
         sEducacion.save(educacion);
         return new ResponseEntity(new Mensaje("Educacion actualizada"), HttpStatus.OK);
     }
-    
+   
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id")int id){
         
