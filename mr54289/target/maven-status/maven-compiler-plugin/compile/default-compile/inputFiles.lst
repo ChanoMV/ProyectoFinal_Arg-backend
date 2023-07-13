@@ -1,6 +1,7 @@
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Security\Dto\NuevoUsuario.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Security\jwt\JwtEntryPoint.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Controler\CSkill.java
+C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Dto\DtoProyecto.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Service\SEducacion.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Security\Dto\LoginUsuario.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Security\Entity\Usuario.java
@@ -14,14 +15,13 @@ C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\mai
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Dto\DtoSkill.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Entity\Educacion.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Security\jwt\JwtTokenFilter.java
-C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Security\jwt\OncePerRequestFilter.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Controler\PersonaController.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Security\Entity\UsuarioPrincipal.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\CORSConfig.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Service\SExperiencia.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Controler\CEducacion.java
+C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Entity\Proyecto.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Security\Entity\Rol.java
-C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\AppConfig.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Security\MainSecurity.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Security\Service\UserDetailsImpl.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Repository\REducacion.java
@@ -34,9 +34,12 @@ C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\mai
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Dto\DtoEducacion.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Service\ImpPersonaService.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Security\Controller\AuthController.java
+C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Controler\CProyecto.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Entity\Skill.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Security\Repository\iUsuarioRepository.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Repository\IPersonaRepository.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Service\Sskill.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Mr54289Application.java
 C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Security\Repository\iRolRepository.java
+C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Repository\ProyectoRepository.java
+C:\Users\marko\Angular\Proyecto final\ProyectoFinal_Arg\Back End\mr54289\src\main\java\com\portfolio\mr54289\Service\ProyectoService.java
