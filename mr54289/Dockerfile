@@ -1,5 +1,6 @@
 FROM amazoncorretto: openjdk:17-alpine
 MAINTAINER mr54289 
-COPY mr54289/target/mr54289-0.0.1-SNAPSHOT.jar mr54289-app.jar             
+COPY target/mr54289-0.0.1-SNAPSHOT.jar mr54289-app.jar             
 ENTRYPOINT ["java","-jar","/mr54289-app.jar"]     
 EXPOSE 8080
+
